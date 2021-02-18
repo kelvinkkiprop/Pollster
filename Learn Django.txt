@@ -1,0 +1,33 @@
+- Download and install python, be sure to check the option that adds Python to PATH.
+- Create a project folder e.g pollster_project, navigate inside it and follow the below commands:
+
+1. Install Django Project pip environment
+pip install pipenv
+
+2. Create Django Project Virtual Env
+pipenv shell
+
+3. Installing Django
+pipenv install django
+
+4. Create Django Project Folder/Module
+django-admin startproject pollster
+
+5. Run Django Project Server
+python manage.py runserver
+python manage.py runserver 8081
+
+6. Run Migrations
+python manage.py migrate
+
+7. Create New App inside a Project
+python manage.py startapp polls
+
+8. Create New App Migrations (i.e. for newly create models e.g. Questions, Choices)
+python manage.py makemigrations polls
+
+then migrate to DB
+python manage.py migrate
+
+9. Create a Super User
+python manage.py createsuperuser
